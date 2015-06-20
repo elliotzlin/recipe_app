@@ -13,6 +13,16 @@
 		0400AEA31B329C8500C86C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0400AEA21B329C8500C86C5C /* Images.xcassets */; };
 		0400AEA61B329C8500C86C5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0400AEA41B329C8500C86C5C /* LaunchScreen.xib */; };
 		0400AEB21B329C8500C86C5C /* Fridge_FoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AEB11B329C8500C86C5C /* Fridge_FoodTests.swift */; };
+		0400AEBF1B329DC700C86C5C /* cookbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0400AEBB1B329DC700C86C5C /* cookbook.png */; };
+		0400AEC01B329DC700C86C5C /* cookboox2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0400AEBC1B329DC700C86C5C /* cookboox2x.png */; };
+		0400AEC11B329DC700C86C5C /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 0400AEBD1B329DC700C86C5C /* fridge.png */; };
+		0400AEC21B329DC700C86C5C /* fridge2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0400AEBE1B329DC700C86C5C /* fridge2x.png */; };
+		0400AEC51B336C7500C86C5C /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AEC41B336C7500C86C5C /* RecipesViewController.swift */; };
+		0400AEC71B336CAC00C86C5C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AEC61B336CAC00C86C5C /* Recipe.swift */; };
+		0400AEC91B336CF000C86C5C /* Sample Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AEC81B336CF000C86C5C /* Sample Data.swift */; };
+		0400AECB1B33709C00C86C5C /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AECA1B33709C00C86C5C /* RecipeCell.swift */; };
+		0400AECD1B33A4D000C86C5C /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AECC1B33A4D000C86C5C /* RecipeDetailsViewController.swift */; };
+		04999E0E1B33BAE6004500DD /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04999E0D1B33BAE6004500DD /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,16 @@
 		0400AEAB1B329C8500C86C5C /* Fridge FoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fridge FoodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0400AEB01B329C8500C86C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0400AEB11B329C8500C86C5C /* Fridge_FoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fridge_FoodTests.swift; sourceTree = "<group>"; };
+		0400AEBB1B329DC700C86C5C /* cookbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cookbook.png; sourceTree = "<group>"; };
+		0400AEBC1B329DC700C86C5C /* cookboox2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cookboox2x.png; sourceTree = "<group>"; };
+		0400AEBD1B329DC700C86C5C /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge.png; sourceTree = "<group>"; };
+		0400AEBE1B329DC700C86C5C /* fridge2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge2x.png; sourceTree = "<group>"; };
+		0400AEC41B336C7500C86C5C /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		0400AEC61B336CAC00C86C5C /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		0400AEC81B336CF000C86C5C /* Sample Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sample Data.swift"; sourceTree = "<group>"; };
+		0400AECA1B33709C00C86C5C /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		0400AECC1B33A4D000C86C5C /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		04999E0D1B33BAE6004500DD /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +97,16 @@
 		0400AE981B329C8500C86C5C /* Fridge Food */ = {
 			isa = PBXGroup;
 			children = (
+				0400AEC31B329DD300C86C5C /* Images */,
 				0400AE9B1B329C8500C86C5C /* AppDelegate.swift */,
 				0400AE9D1B329C8500C86C5C /* ViewController.swift */,
 				0400AE9F1B329C8500C86C5C /* Main.storyboard */,
+				0400AECC1B33A4D000C86C5C /* RecipeDetailsViewController.swift */,
+				0400AECA1B33709C00C86C5C /* RecipeCell.swift */,
+				0400AEC41B336C7500C86C5C /* RecipesViewController.swift */,
+				0400AEC61B336CAC00C86C5C /* Recipe.swift */,
+				04999E0D1B33BAE6004500DD /* Ingredient.swift */,
+				0400AEC81B336CF000C86C5C /* Sample Data.swift */,
 				0400AEA21B329C8500C86C5C /* Images.xcassets */,
 				0400AEA41B329C8500C86C5C /* LaunchScreen.xib */,
 				0400AE991B329C8500C86C5C /* Supporting Files */,
@@ -110,6 +137,17 @@
 				0400AEB01B329C8500C86C5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0400AEC31B329DD300C86C5C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0400AEBB1B329DC700C86C5C /* cookbook.png */,
+				0400AEBC1B329DC700C86C5C /* cookboox2x.png */,
+				0400AEBD1B329DC700C86C5C /* fridge.png */,
+				0400AEBE1B329DC700C86C5C /* fridge2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400AEC21B329DC700C86C5C /* fridge2x.png in Resources */,
 				0400AEA11B329C8500C86C5C /* Main.storyboard in Resources */,
+				0400AEC01B329DC700C86C5C /* cookboox2x.png in Resources */,
 				0400AEA61B329C8500C86C5C /* LaunchScreen.xib in Resources */,
+				0400AEBF1B329DC700C86C5C /* cookbook.png in Resources */,
+				0400AEC11B329DC700C86C5C /* fridge.png in Resources */,
 				0400AEA31B329C8500C86C5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +255,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400AE9E1B329C8500C86C5C /* ViewController.swift in Sources */,
+				0400AEC51B336C7500C86C5C /* RecipesViewController.swift in Sources */,
+				0400AEC91B336CF000C86C5C /* Sample Data.swift in Sources */,
+				0400AECB1B33709C00C86C5C /* RecipeCell.swift in Sources */,
+				04999E0E1B33BAE6004500DD /* Ingredient.swift in Sources */,
 				0400AE9C1B329C8500C86C5C /* AppDelegate.swift in Sources */,
+				0400AECD1B33A4D000C86C5C /* RecipeDetailsViewController.swift in Sources */,
+				0400AEC71B336CAC00C86C5C /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +389,7 @@
 				INFOPLIST_FILE = "Fridge Food/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +400,7 @@
 				INFOPLIST_FILE = "Fridge Food/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +457,7 @@
 				0400AEB71B329C8500C86C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0400AEB81B329C8500C86C5C /* Build configuration list for PBXNativeTarget "Fridge FoodTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +466,7 @@
 				0400AEBA1B329C8500C86C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
