@@ -9,7 +9,7 @@
 import Foundation
 
 protocol APIControllerProtocol {
-    func didReceiveAPIResults(results: NSArray)
+    func didReceiveAPIResults(results: NSDictionary)
 }
 
 class APIController {
@@ -36,9 +36,11 @@ class APIController {
                     //If there is an error parsing JSON, print it to the console
                     println("JSON Error \(err!.localizedDescription)")
                 }
+                /*
                 if let results: NSArray = jsonResult["recipes"] as? NSArray {
                     self.delegate?.didReceiveAPIResults(results)
-                }
+                }*/
+                self.delegate?.didReceiveAPIResults(jsonResult)
             }
         
         })
@@ -48,6 +50,32 @@ class APIController {
         task.resume()
     }
     
+    func getRecipe(id: String) {
+        
+        let urlPath = "http://food2fork.com/api/get?key=\(APIKey)&rId=" + id
+        let url = NSURL(string: urlPath)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithURL(url!, completionHandler: {data, response, error -> Void in println("Task completed")
+            if(error != nil) {
+                //If there is an error in the web request, print it to console
+                println(error.localizedDescription)
+            }
+            var err: NSError?
+            if let jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSDictionary {
+                if(err != nil) {
+                    //If there is an error parsing JSON, print it to the console
+                    println("JSON Error \(err!.localizedDescription)")
+                }
+                self.delegate?.didReceiveAPIResults(jsonResult)
+            }
+            
+        })
+            
+        //The task is just an object with all these properties set
+        //In order to actually make the web request, we need to "resume"
+        task.resume()
+    }
+
     init() {}
     
 }

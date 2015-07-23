@@ -8,10 +8,12 @@
 
 import UIKit
 
-class RecipeDetailsViewController: UITableViewController {
+class RecipeDetailsViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var prepTimeField: UITextField!
+    
+    var isEditing: Bool = false
     
     @IBAction func addIngredients(segue:UIStoryboardSegue) {
         if let ingredientsViewController = segue.sourceViewController as? IngredientsViewController {
@@ -30,6 +32,10 @@ class RecipeDetailsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         detailLabel.text = "0 items"
+        nameTextField.delegate = self; prepTimeField.delegate = self
+        /*
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tap)*/
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,4 +53,23 @@ class RecipeDetailsViewController: UITableViewController {
         }
     }
     
+    func textFieldDidBeginEditing(textField: UITextField){
+        isEditing = true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        isEditing = false
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
+    }
+    /*
+    func dismissKeyboard(textField: UITextField) {
+        if (isEditing) {
+            self.view.endEditing(true)
+        }
+    }*/
+        
 }

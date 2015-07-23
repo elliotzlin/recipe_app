@@ -17,6 +17,9 @@ class IngredientDetailsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tap)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,6 +37,10 @@ class IngredientDetailsViewController: UITableViewController {
         if segue.identifier == "SaveIngredientDetail" {
             ingredient = Ingredient(name: self.nameTextField.text, qty: self.qtyTextField.text)
         }
+    }
+    
+    func dismissKeyboard() {
+        self.view.endEditing(true)
     }
 
 }

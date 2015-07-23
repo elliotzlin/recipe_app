@@ -22,6 +22,7 @@
 		0400AEC91B336CF000C86C5C /* Sample Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AEC81B336CF000C86C5C /* Sample Data.swift */; };
 		0400AECB1B33709C00C86C5C /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AECA1B33709C00C86C5C /* RecipeCell.swift */; };
 		0400AECD1B33A4D000C86C5C /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AECC1B33A4D000C86C5C /* RecipeDetailsViewController.swift */; };
+		040C2B121B5DB28000A7EE69 /* ExploreRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2B111B5DB28000A7EE69 /* ExploreRecipeViewController.swift */; };
 		042614081B4CEEC000B80AE1 /* shrimp_creole.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 042614071B4CEEC000B80AE1 /* shrimp_creole.jpg */; };
 		0426140A1B4F08A400B80AE1 /* lasagna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 042614091B4F08A400B80AE1 /* lasagna.jpg */; };
 		0426140C1B4F0A9C00B80AE1 /* cubano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426140B1B4F0A9C00B80AE1 /* cubano.jpg */; };
@@ -67,6 +68,7 @@
 		0400AEC81B336CF000C86C5C /* Sample Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sample Data.swift"; sourceTree = "<group>"; };
 		0400AECA1B33709C00C86C5C /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		0400AECC1B33A4D000C86C5C /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		040C2B111B5DB28000A7EE69 /* ExploreRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreRecipeViewController.swift; sourceTree = "<group>"; };
 		042614071B4CEEC000B80AE1 /* shrimp_creole.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shrimp_creole.jpg; sourceTree = "<group>"; };
 		042614091B4F08A400B80AE1 /* lasagna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lasagna.jpg; sourceTree = "<group>"; };
 		0426140B1B4F0A9C00B80AE1 /* cubano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cubano.jpg; sourceTree = "<group>"; };
@@ -121,11 +123,12 @@
 		0400AE981B329C8500C86C5C /* FridgeFood */ = {
 			isa = PBXGroup;
 			children = (
-				04280C3C1B54B3F6002BB8BF /* ExploreTableViewController.swift */,
 				0400AEC31B329DD300C86C5C /* Images */,
 				0400AE9B1B329C8500C86C5C /* AppDelegate.swift */,
 				0400AE9D1B329C8500C86C5C /* ViewController.swift */,
 				0400AE9F1B329C8500C86C5C /* Main.storyboard */,
+				040C2B111B5DB28000A7EE69 /* ExploreRecipeViewController.swift */,
+				04280C3C1B54B3F6002BB8BF /* ExploreTableViewController.swift */,
 				04280C3A1B54B3D2002BB8BF /* APIController.swift */,
 				04C42A231B3DCF1E0077FBA6 /* IngredientDetailsViewController.swift */,
 				04C42A251B3DD0930077FBA6 /* IngredientsViewController.swift */,
@@ -306,6 +309,7 @@
 				0400AECB1B33709C00C86C5C /* RecipeCell.swift in Sources */,
 				04C42A261B3DD0930077FBA6 /* IngredientsViewController.swift in Sources */,
 				04C42A281B3DD6470077FBA6 /* IngredientCell.swift in Sources */,
+				040C2B121B5DB28000A7EE69 /* ExploreRecipeViewController.swift in Sources */,
 				04999E0E1B33BAE6004500DD /* Ingredient.swift in Sources */,
 				0400AE9C1B329C8500C86C5C /* AppDelegate.swift in Sources */,
 				0400AECD1B33A4D000C86C5C /* RecipeDetailsViewController.swift in Sources */,
