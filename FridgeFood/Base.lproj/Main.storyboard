@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Fridge-->
@@ -95,18 +96,52 @@
                                                     <constraint firstAttribute="width" secondItem="oAr-Ji-WEB" secondAttribute="height" multiplier="16:9" id="AJo-Y8-fdh"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMY-La-WuX">
+                                                <rect key="frame" x="140" y="188" width="100" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-CT-Ja2">
+                                                <rect key="frame" x="140" y="217" width="320" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="xtl-CT-Ja2" firstAttribute="leading" secondItem="ezN-BH-jSA" secondAttribute="leading" constant="8" id="2Cl-mc-0xh"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="leading" secondItem="ezN-BH-jSA" secondAttribute="leading" constant="8" id="2uJ-Nb-ZzI"/>
                                             <constraint firstAttribute="trailing" secondItem="oAr-Ji-WEB" secondAttribute="trailing" id="4MQ-94-gYX"/>
                                             <constraint firstItem="oAr-Ji-WEB" firstAttribute="leading" secondItem="ezN-BH-jSA" secondAttribute="leading" id="6SO-Yn-gi3"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="leading" secondItem="oAr-Ji-WEB" secondAttribute="leading" constant="-8" id="FuS-NR-PZm"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="leading" secondItem="ezN-BH-jSA" secondAttribute="leading" constant="8" id="POC-rY-CQK"/>
                                             <constraint firstItem="oAr-Ji-WEB" firstAttribute="top" secondItem="ezN-BH-jSA" secondAttribute="top" id="TnI-dw-Kje"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="top" secondItem="oAr-Ji-WEB" secondAttribute="bottom" constant="8" id="WmA-cu-dK5"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="top" secondItem="oAr-Ji-WEB" secondAttribute="top" constant="6" id="aFX-nr-ojr"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="leading" secondItem="ezN-BH-jSA" secondAttribute="leading" constant="8" id="cNU-Hk-1MS"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="leading" secondItem="oAr-Ji-WEB" secondAttribute="leading" constant="-8" id="ca2-sC-fQM"/>
+                                            <constraint firstItem="xMY-La-WuX" firstAttribute="bottom" secondItem="oAr-Ji-WEB" secondAttribute="bottom" constant="29" id="cpx-5p-PID"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="xtl-CT-Ja2" secondAttribute="trailing" constant="8" id="dR8-xU-2Bx"/>
                                             <constraint firstAttribute="centerX" secondItem="oAr-Ji-WEB" secondAttribute="centerX" id="sn7-zp-QuK"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="FuS-NR-PZm"/>
+                                                <exclude reference="POC-rY-CQK"/>
+                                                <exclude reference="WmA-cu-dK5"/>
+                                                <exclude reference="aFX-nr-ojr"/>
+                                                <exclude reference="cNU-Hk-1MS"/>
+                                                <exclude reference="ca2-sC-fQM"/>
+                                                <exclude reference="cpx-5p-PID"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ezN-BH-jSA" firstAttribute="leading" secondItem="7Al-UV-ESi" secondAttribute="leading" id="0fD-fK-dGJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ezN-BH-jSA" secondAttribute="bottom" id="ViH-ZV-rpe"/>
                                     <constraint firstAttribute="trailing" secondItem="ezN-BH-jSA" secondAttribute="trailing" id="b7K-WO-E4T"/>
                                     <constraint firstItem="ezN-BH-jSA" firstAttribute="top" secondItem="7Al-UV-ESi" secondAttribute="top" id="iFt-aP-tUN"/>
                                 </constraints>
@@ -120,6 +155,8 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="ezN-BH-jSA" id="rr5-pG-UhR"/>
+                        <outlet property="ingrTextView" destination="xtl-CT-Ja2" id="yE3-66-zod"/>
+                        <outlet property="ingredientsLabel" destination="xMY-La-WuX" id="wgT-4X-RKh"/>
                         <outlet property="recipeImage" destination="oAr-Ji-WEB" id="7BA-fT-JMa"/>
                         <outlet property="scrollView" destination="7Al-UV-ESi" id="1gR-Ha-kAO"/>
                     </connections>
@@ -240,16 +277,24 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ekw-EV-Cfz" secondAttribute="trailing" id="Igc-sg-Omf"/>
+                                            <constraint firstItem="DjV-Uf-usm" firstAttribute="leading" secondItem="EXI-lp-egO" secondAttribute="leading" constant="140" id="JwI-Cc-5Ic"/>
                                             <constraint firstItem="ekw-EV-Cfz" firstAttribute="leading" secondItem="EXI-lp-egO" secondAttribute="leading" id="L1o-XS-gPW"/>
                                             <constraint firstItem="DjV-Uf-usm" firstAttribute="top" secondItem="ekw-EV-Cfz" secondAttribute="bottom" constant="6" id="MYk-JC-8Yc"/>
                                             <constraint firstItem="2vA-pS-SgB" firstAttribute="top" secondItem="ekw-EV-Cfz" secondAttribute="bottom" constant="35" id="NKU-h1-QkN"/>
                                             <constraint firstItem="dup-go-Hvb" firstAttribute="top" secondItem="ekw-EV-Cfz" secondAttribute="bottom" constant="6" id="TOo-Yt-TFC"/>
                                             <constraint firstItem="ekw-EV-Cfz" firstAttribute="leading" secondItem="2vA-pS-SgB" secondAttribute="leading" constant="-8" id="Ty1-pf-e4O"/>
+                                            <constraint firstItem="DjV-Uf-usm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EXI-lp-egO" secondAttribute="leading" constant="140" id="aFc-cI-hiG"/>
                                             <constraint firstItem="ekw-EV-Cfz" firstAttribute="leading" secondItem="DjV-Uf-usm" secondAttribute="leading" constant="-8" id="mzk-Pa-o9v"/>
                                             <constraint firstItem="dup-go-Hvb" firstAttribute="trailing" secondItem="ekw-EV-Cfz" secondAttribute="trailing" constant="-8" id="saN-8b-a34"/>
                                             <constraint firstItem="ekw-EV-Cfz" firstAttribute="top" secondItem="EXI-lp-egO" secondAttribute="top" id="uV6-1Y-ELI"/>
                                             <constraint firstAttribute="centerX" secondItem="ekw-EV-Cfz" secondAttribute="centerX" id="xUw-hD-sAm"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JwI-Cc-5Ic"/>
+                                                <exclude reference="aFc-cI-hiG"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>

@@ -47,6 +47,7 @@ class RecipePageViewController: UIViewController {
             ingredientText.appendString(ingredient.toString() + "\n")
         }
         ingredientsTextView.text = ingredientText
+        
     }
 
     override func didReceiveMemoryWarning() {

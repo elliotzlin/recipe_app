@@ -31,7 +31,11 @@
 		04280C351B54915E002BB8BF /* compass2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04280C341B54915E002BB8BF /* compass2x.png */; };
 		04280C3B1B54B3D2002BB8BF /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04280C3A1B54B3D2002BB8BF /* APIController.swift */; };
 		04280C3D1B54B3F6002BB8BF /* ExploreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04280C3C1B54B3F6002BB8BF /* ExploreTableViewController.swift */; };
+		049297701B61B1B600BA8B19 /* UIImageView_Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492976F1B61B1B600BA8B19 /* UIImageView_Additions.m */; };
 		04999E0E1B33BAE6004500DD /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04999E0D1B33BAE6004500DD /* Ingredient.swift */; };
+		04B114D41B61A6BB00AB42B2 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B114D31B61A6BB00AB42B2 /* UIImage+Resize.m */; };
+		04B114DA1B61A79600AB42B2 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B114D71B61A79600AB42B2 /* UIImage+RoundedCorner.m */; };
+		04B114DE1B61ABFA00AB42B2 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B114DC1B61ABFA00AB42B2 /* UIImage+Alpha.m */; };
 		04C42A241B3DCF1E0077FBA6 /* IngredientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42A231B3DCF1E0077FBA6 /* IngredientDetailsViewController.swift */; };
 		04C42A261B3DD0930077FBA6 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42A251B3DD0930077FBA6 /* IngredientsViewController.swift */; };
 		04C42A281B3DD6470077FBA6 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42A271B3DD6470077FBA6 /* IngredientCell.swift */; };
@@ -77,7 +81,16 @@
 		04280C341B54915E002BB8BF /* compass2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass2x.png; sourceTree = "<group>"; };
 		04280C3A1B54B3D2002BB8BF /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		04280C3C1B54B3F6002BB8BF /* ExploreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableViewController.swift; sourceTree = "<group>"; };
+		0492976D1B61B12C00BA8B19 /* UIImageView_Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageView_Additions.h; sourceTree = "<group>"; };
+		0492976F1B61B1B600BA8B19 /* UIImageView_Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageView_Additions.m; sourceTree = "<group>"; };
 		04999E0D1B33BAE6004500DD /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		04B114D21B61A6BB00AB42B2 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		04B114D31B61A6BB00AB42B2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		04B114D71B61A79600AB42B2 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		04B114D81B61A79600AB42B2 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		04B114DC1B61ABFA00AB42B2 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		04B114DD1B61ABFA00AB42B2 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		04B114DF1B61AC5E00AB42B2 /* FridgeFood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FridgeFood-Bridging-Header.h"; path = "FridgeFood/FridgeFood-Bridging-Header.h"; sourceTree = "<group>"; };
 		04C42A231B3DCF1E0077FBA6 /* IngredientDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientDetailsViewController.swift; sourceTree = "<group>"; };
 		04C42A251B3DD0930077FBA6 /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		04C42A271B3DD6470077FBA6 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
@@ -105,9 +118,11 @@
 		0400AE8D1B329C8500C86C5C = {
 			isa = PBXGroup;
 			children = (
+				04B114DF1B61AC5E00AB42B2 /* FridgeFood-Bridging-Header.h */,
 				0400AE981B329C8500C86C5C /* FridgeFood */,
 				0400AEAE1B329C8500C86C5C /* FridgeFoodTests */,
 				0400AE971B329C8500C86C5C /* Products */,
+				04B114D11B61A6BB00AB42B2 /* Resize */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +202,21 @@
 				0400AEBE1B329DC700C86C5C /* fridge2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		04B114D11B61A6BB00AB42B2 /* Resize */ = {
+			isa = PBXGroup;
+			children = (
+				04B114DC1B61ABFA00AB42B2 /* UIImage+Alpha.m */,
+				04B114DD1B61ABFA00AB42B2 /* UIImage+Alpha.h */,
+				04B114D71B61A79600AB42B2 /* UIImage+RoundedCorner.m */,
+				04B114D81B61A79600AB42B2 /* UIImage+RoundedCorner.h */,
+				04B114D21B61A6BB00AB42B2 /* UIImage+Resize.h */,
+				0492976D1B61B12C00BA8B19 /* UIImageView_Additions.h */,
+				0492976F1B61B1B600BA8B19 /* UIImageView_Additions.m */,
+				04B114D31B61A6BB00AB42B2 /* UIImage+Resize.m */,
+			);
+			path = Resize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +331,8 @@
 			files = (
 				04280C3D1B54B3F6002BB8BF /* ExploreTableViewController.swift in Sources */,
 				04280C3B1B54B3D2002BB8BF /* APIController.swift in Sources */,
+				04B114DE1B61ABFA00AB42B2 /* UIImage+Alpha.m in Sources */,
+				049297701B61B1B600BA8B19 /* UIImageView_Additions.m in Sources */,
 				0400AE9E1B329C8500C86C5C /* ViewController.swift in Sources */,
 				04C42A2A1B4CDD050077FBA6 /* RecipePageViewController.swift in Sources */,
 				0400AEC51B336C7500C86C5C /* RecipesViewController.swift in Sources */,
@@ -308,6 +340,8 @@
 				04C42A241B3DCF1E0077FBA6 /* IngredientDetailsViewController.swift in Sources */,
 				0400AECB1B33709C00C86C5C /* RecipeCell.swift in Sources */,
 				04C42A261B3DD0930077FBA6 /* IngredientsViewController.swift in Sources */,
+				04B114DA1B61A79600AB42B2 /* UIImage+RoundedCorner.m in Sources */,
+				04B114D41B61A6BB00AB42B2 /* UIImage+Resize.m in Sources */,
 				04C42A281B3DD6470077FBA6 /* IngredientCell.swift in Sources */,
 				040C2B121B5DB28000A7EE69 /* ExploreRecipeViewController.swift in Sources */,
 				04999E0E1B33BAE6004500DD /* Ingredient.swift in Sources */,
@@ -392,6 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = FridgeFood;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,6 +463,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FridgeFood;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -441,6 +477,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FridgeFood/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = FridgeFood;
+				SWIFT_OBJC_BRIDGING_HEADER = "FridgeFood/FridgeFood-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -452,6 +489,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FridgeFood/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = FridgeFood;
+				SWIFT_OBJC_BRIDGING_HEADER = "FridgeFood/FridgeFood-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
